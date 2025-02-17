@@ -8,6 +8,11 @@ console.log(os.cpus().length);
 // Async
 // fs.writeFile("./test.txt","Hello world Async", (err)=>{})
 
+console.log("1");
+// Blocking...
+// const result= fs.readFileSync("./contacts.txt", "utf-8");
+
+// Non-Blocking
 const result=fs.readFile("./contacts.txt","utf-8", (err,result)=>{
     if(err){
         console.log("Error",err);
@@ -16,7 +21,9 @@ const result=fs.readFile("./contacts.txt","utf-8", (err,result)=>{
     }
 });
 console.log(result);
-
+console.log("2");
+console.log("3");
+console.log("4");
 
 fs.appendFileSync("./test.txt", `${Date.now()}Hey there \n`);
 

@@ -1,0 +1,10 @@
+// Version
+
+4.21.2
+major: 4
+recommended: 21
+minor: 2
+
+^ - Install all recommended and minor fixes Automatically
+
+~ - only update patches
